@@ -1,0 +1,110 @@
+body {
+    max-width: 1062px;
+    width: 100%;
+    margin: auto;
+    background: url('./img/background.png') no-repeat center;
+    height: 100%;
+    color:#fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+    margin-bottom: 200px;
+}
+
+.menu-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 63px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.main-text {
+    font-weight: 500;
+    font-size: 53px;
+    line-height: 62px;
+}
+
+.quote {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 0;
+    opacity: 0.7;
+}
+
+.button-order {
+    all: unset;
+    padding: 22px 55px;
+    background: #f6762c;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.main {
+    max-width: 500px;
+}
+.button-order {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    background-color: #ff9100;
+    border-radius: 5px;
+    color: #000000;
+    padding: 15px 25px;
+   }
+   .button-order:hover {
+    background-color: #ffffff;
+   }
+   div { border: 1px solid transparent; }
+/* -- The outside rim of the clock with gradient -- */
+#clock-rim {
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(gray, black);
+  border-radius: 150px;
+}
+/* -- Clock's face -- */
+#clock-face {
+  display: block;
+  position: relative;  
+  width: 260px;
+  height: 260px;
+  margin: 19px auto;
+  border-radius: 150px;
+  background: white;
+}
+/* -- Second hand -- */
+#second { position: absolute; top: 123px; left: 128px; width: 100px; height: 2px; border: 1px solid transparent; border-radius: 5px; transform: unset; background: green; transform-origin: 1px 1px; }
+/* -- Minute hand -- */
+#minute { position: absolute; top: 123px; left: 128px; width: 100px; height: 4px; border: 1px solid transparent; border-radius: 5px; transform: unset; background: red; transform-origin: 2px 2px; }
+/* -- Hour hand -- */
+#hour { position: absolute; top: 123px; left: 128px; width: 50px; height: 4px; border: 1px solid transparent; border-radius: 5px; transform: unset; background: blue; transform-origin: 2px 2px; }
+/* -- Center of the clock -- */
+#center { position: absolute; top: 118px; left: 120px; width: 16px; height: 16px; background: white; border: 1px solid gray; border-radius: 16px; }
+/* -- "HTML clock"  in a box -- */
+#brand { position: absolute; top: 110px; left: 165px; border: 1px solid gray; border-radius: 5px; width: 50px; height: 40px; font-family: Verdana; font-size: 11px; text-align: center; line-height: 20px; }
+/* -- Notches container -- */
+#notch-container { width: 260px; height: 260px }
+/* -- Hourly notch (thicker, but sparse) -- */
+.notch { position: absolute; width: 10px; height: 2px; background: black; border-radius: 5px 5px 5px 5px; }
+/* -- Minute notch (thin) -- */
+.thin { position: absolute; width: 10px; height: 1px; border-top: 1px solid gray; }
